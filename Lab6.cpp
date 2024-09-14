@@ -1,5 +1,5 @@
 #include <iostream>
-// #include <iomanip>
+#include <iomanip>
 using namespace std;
 
 void PopulateArray(double *&, int); // Populate array with user input
@@ -14,6 +14,7 @@ int main()
 
     PopulateArray(dArrayPtr, ARRAY_SIZE); // Call function to populate array
     OutputArray(dArrayPtr, ARRAY_SIZE); // Call to output array
+    cout << "Sum = " << fixed << setprecision(2) << SumArray(dArrayPtr, ARRAY_SIZE) << endl; // Output sum
 
     // Deallocate heap elements and nullify pointers
     delete [] dArrayPtr;
