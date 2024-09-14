@@ -8,10 +8,7 @@ double SumArray(const double *&);  // Return array sum
 int main()
 {
     // Initialize variables
-    // int x = 5, y = 10;
-    double *dArrayPtr = new double[5];
-
-    int *yPtr = new int(10);
+    double *dArrayPtr = new double[5]; // Allocate array of 5 ints
 
     // Console print before swap
     // cout << "x = " << x << "  | y = " << y << endl;
@@ -38,6 +35,11 @@ int main()
 void PopulateArray(double *&arrPtr)
 {
     // For array size, loop with cin to get double values
+    for (size_t i = 0; i < arrPtr.length(); i++)
+    {
+        /* code */
+    }
+    
 }
 // Output array on one line
 void OutputArray(const double *&arrPtr)
